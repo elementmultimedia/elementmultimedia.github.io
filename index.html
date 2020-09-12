@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="/css/master.css">
+</head>
+<body>
+
+  <button id="btn-menu">
+    <i class="fas fa-bars fa-2x"></i>
+  </button>
+
+  <nav class="navigation-main hidden">
+    <ul>
+      <li><a href="#" data-page="inicio">Inicio</a></li>
+      <li><a href="#" data-page="nosotros">Nosotros</a></li>
+      <li><a href="#" data-page="trabajos">Trabajos</a></li>
+      <li><a href="#" data-page="contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <main id="wrapper">
+    <section class="page" id="inicio">
+      <video autoplay muted loop id="myVideo">
+        <source src="./assets/particulas.mp4" type="video/mp4">
+      </video>
+      <canvas id="particulas" width="auto" height="auto"></canvas>
+      <div class="content">
+        <img src="./assets/logoimagen.svg" alt="Element">
+      </div>
+    </section>
+    <section class="page" id="nosotros"></section>
+    <section class="page" id="trabajos"></section>
+    <section class="page" id="contacto"></section>
+  </main>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
