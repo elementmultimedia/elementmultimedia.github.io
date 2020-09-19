@@ -14,7 +14,7 @@
   transform: scale(1);
   opacity: 1;
   transition: all 1s ease-in-out;
-  z-index: 1;
+  z-index: 9;
 
 }
 
@@ -70,5 +70,5 @@ button#btn-menu{
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  z-index: 2;
+  z-index: 10;
 }

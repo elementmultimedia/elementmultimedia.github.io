@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/css/master.css">
 </head>
 <body>
-
   <button id="btn-menu">
     <i class="fas fa-bars fa-2x"></i>
   </button>
@@ -23,18 +22,19 @@
   </nav>
   <main id="wrapper">
     <section class="page" id="inicio">
-      <video autoplay muted loop id="myVideo">
-        <source src="./assets/particulas.mp4" type="video/mp4">
-      </video>
-      <canvas id="particulas" width="auto" height="auto"></canvas>
-      <div class="content">
-        <img src="./assets/logoimagen.svg" alt="Element">
-      </div>
+      <video src="./assets/particulas.mp4" loop muted autoplay id="myVideo"></video>
+      <canvas></canvas>
+      <article class="content">
+        <img src="./assets/logoimagen.svg" alt="Element Logo">
+      </article>
     </section>
     <section class="page" id="nosotros"></section>
     <section class="page" id="trabajos"></section>
     <section class="page" id="contacto"></section>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script src="./js/main.js" type="module"></script>
 </body>
 </html>

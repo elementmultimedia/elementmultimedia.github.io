@@ -8,6 +8,10 @@ let animation = null;
 let runnig = false;
 
 export default function init (pointer,ctx) { 
+
+  console.clear()
+  console.log(pointer,ctx)
+
   if(!runnig){ 
     let currentColor = colors[Math.floor(Math.random() * colors.length)];
 
