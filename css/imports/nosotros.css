@@ -1,0 +1,73 @@
+#nosotros{
+    background: rgb(0,93,121);
+    background: radial-gradient(circle, rgba(0,93,121,1) 0%, rgba(0,17,28,1) 80%);
+    position: relative;
+}
+#nosotros::after{
+    content: url("../../assets/agua.svg");
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: -12%;
+    top: 0%;
+}
+#nosotros article{
+    background-color: rgba(21, 21, 21, 0);
+    width: 75%;
+    height: 100%;
+    padding: 5rem;
+    color: #fafafa;
+    z-index: 1;
+}
+#nosotros article h2{
+    font-size: 4rem;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    position: relative;
+}
+#nosotros article h3{
+    margin: 2rem 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+#nosotros article p{
+    font-size: 2rem;
+}
+
+#nosotros article p:nth-child(odd){
+    margin:  1rem ;
+    padding: 1rem ;
+}
+
+#nosotros article p:not(:nth-child(odd)){
+    margin: 0rem 0rem 0rem 1rem ;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+
+
+#nosotros article h2::after{
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background: rgb(0,190,247);
+    background: linear-gradient(90deg, rgba(0,190,247,1) 10%, rgba(0,0,0,0) 50%);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius: .5rem;
+}
+
+.words{
+    position: relative;
+    transition: all .3s ease-in-out;
+    -webkit-text-stroke: 1px transparent;
+    -webkit-text-fill-color: #00bef7;
+}
+
+.words:hover{
+    -webkit-text-stroke: .1rem #00bef7;
+    -webkit-text-fill-color: transparent;
+}
