@@ -1,0 +1,22 @@
+.controls {
+    height: 100%;
+    align-self: center;
+    width: 10%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.controls button {
+    margin: 1rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, rgba(115, 35, 250, .75), rgba(55,25,120,.1));
+    color: rgba(115, 35, 250, .5);
+    text-shadow: 0rem 0rem 1rem rgba(180, 135, 250, 1);
+}

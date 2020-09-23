@@ -1,0 +1,22 @@
+@import "./player.css";
+
+#manifiest{
+    background: rgb(56,18,121);
+    background: radial-gradient(circle, rgba(56,18,121,1) 0%, rgba(0,17,28,1) 80%);
+}
+#manifiest article{
+    background-color: rgba(21, 21, 21, 0);
+    width: 75%;
+    height: 100%;
+    padding: 5rem;
+    color: #fafafa;
+    z-index: 1;
+    
+}
+#manifiest video{
+    max-width: 100%;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom, rgba(115,30,250,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(115,30,250,1) 100%);
+}
