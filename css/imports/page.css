@@ -8,6 +8,7 @@
     height: 100vh;
     -webkit-overflow-scrolling: touch;
     overflow: scroll hidden;
+    scrollbar-width: none;
 }
 .page{
     flex: 0 0 auto;
@@ -16,12 +17,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins',sans-serif;
 }
 
 ::-webkit-scrollbar{
     display: none;
+    scrollbar-width: none;
 }
-
 .page:not(:nth-child(odd))
 {
     background-color: tomato;

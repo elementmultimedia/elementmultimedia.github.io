@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Element</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="./css/master.css">
 </head>
 <body>
   <button id="btn-menu">
@@ -17,7 +17,6 @@
       <li><a href="#" data-page="inicio">Inicio</a></li>
       <li><a href="#" data-page="nosotros">Nosotros</a></li>
       <li><a href="#" data-page="trabajos">Trabajos</a></li>
-      <li><a href="#" data-page="contacto">Contacto</a></li>
     </ul>
   </nav>
   <main id="wrapper">
@@ -44,22 +43,10 @@
           Ideamos soluciones a las medida para cada uno de nuestros clientes para aumentar su productividad y acompañar su crecimiento.
         </p>
         <nav class="navigation">
-          <button data-page="manifiest">Conocenos más <i class="fas fa-2x fa-play"></i></button>
           <button data-page="integrantes">El Equipo <i class="fas fa-2x fa-users"></i></button>
+          <button data-page="manifiest">Conocenos más <i class="fas fa-2x fa-play"></i></button>
         </nav>
         <button></button>
-      </article>
-    </section>
-    <section class="page" id="manifiest">
-      <div class="controls">
-        <button id="btnPlay"><i class="fas fa-2x fa-play"></i></button>
-        <button id="btnPause"><i class="fas fa-2x fa-pause"></i></button>
-        <button id="btnStop"><i class="fas fa-2x fa-stop"></i></button>
-        <button id="btnMute"><i class="fas fa-2x fa-minus"></i></button>
-        <button id="btnUp"><i class="fas fa-2x fa-plus"></i></button>
-      </div>
-      <article>
-        <video src="./assets/manifesto.mp4" id="mafiesto"></video>
       </article>
     </section>
     <section class="page" id="integrantes">
@@ -74,9 +61,75 @@
           </div>
         </div>
       </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="/assets/iconos/fuego.svg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Mauricio Mérida</h1>
+            <p>Productor Audiovisual</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="/assets/iconos/tierra.svg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Tatiana Schiavonne</h1>
+            <p>Diseñadora y Animadora 3D </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="/assets/iconos/viento.svg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Eduardo Virgilio</h1>
+            <p>Programador Web y VIdeojuegos</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="page" id="trabajos"></section>
-    <section class="page" id="contacto"></section>
+    <section class="page" id="manifiest">
+      <div class="controls">
+        <button id="btnPlay"><i class="fas fa-2x fa-play"></i></button>
+        <button id="btnPause"><i class="fas fa-2x fa-pause"></i></button>
+        <button id="btnStop"><i class="fas fa-2x fa-stop"></i></button>
+        <button id="btnMute"><i class="fas fa-2x fa-minus"></i></button>
+        <button id="btnUp"><i class="fas fa-2x fa-plus"></i></button>
+      </div>
+      <article>
+        <video src="./assets/reel.mp4" id="mafiesto"></video>
+      </article>
+    </section>
+    <section class="page water" id="trabajos">
+      <article>
+        <h2>Trabajos</h2>
+        <h3>Producción Audiovisual</h3>
+        <ul class="icon-list">
+          <li data-element="water" class="icon-item active"><img src="/assets/iconos/agua.svg" alt=""></li>
+          <li data-element="fire" class="icon-item"><img src="/assets/iconos/fuego.svg" alt=""></li>
+          <li data-element="earth" class="icon-item"><img src="/assets/iconos/tierra.svg" alt=""></li>
+          <li data-element="air" class="icon-item"><img src="/assets/iconos/viento.svg" alt=""></li>
+        </ul>
+        <section id="porfolio">
+
+          <section id="animal">
+            <figure id="loader"><img src="/assets/Animals/Gato/Gato-1.png" alt=""></figure>
+            <div id="renders"></div>
+          </section>
+        
+          <section id="galery">
+        
+          </section>
+        </section>
+      </article>
+    </section>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>

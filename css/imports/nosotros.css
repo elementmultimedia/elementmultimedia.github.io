@@ -16,9 +16,10 @@
     background-color: rgba(21, 21, 21, 0);
     width: 75%;
     height: 100%;
-    padding: 5rem;
+    padding: 2rem 8rem;
     color: #fafafa;
     z-index: 1;
+    margin: 15rem;
 }
 #nosotros article h2{
     font-size: 4rem;

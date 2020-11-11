@@ -1,0 +1,214 @@
+#trabajos{
+    position: relative;
+}
+
+#trabajos , #trabajos *{
+    transition: all .3s ease-in-out;
+}
+#trabajos.water{
+    background-image: radial-gradient(circle,rgba(15,200,225,1) 0%, rgba(0,17,28,1)80%);
+}
+#trabajos.fire{
+    background-image: radial-gradient(circle,rgba(225,15,15,1) 0%, rgba(0,17,28,1)80%);
+}
+#trabajos.earth{
+    background-image: radial-gradient(circle,rgba(15,225,15,1) 0%, rgba(0,17,28,1)80%);
+}
+#trabajos.air{
+    background-image: radial-gradient(circle,rgba(175,15,225,1) 0%, rgba(0,17,28,1)80%);
+}
+
+#trabajos.water::after{
+    content: url("../../assets/separaciones/agua.svg");
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: -5%;
+    top: 0%;
+}
+#trabajos.fire::after{
+    content: url("../../assets/separaciones/fuego.svg");
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: -5%;
+    top: 0%;
+}
+#trabajos.earth::after{
+    content: url("../../assets/separaciones/tierra.svg");
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: -5%;
+    top: 0%;
+}
+#trabajos.air::after{
+    content: url("../../assets/separaciones/viento.svg");
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: -5%;
+    top: 0%;
+}
+#trabajos article{
+    background-color: rgba(21, 21, 21, 0);
+    width: 75%;
+    height: 100%;
+    padding: 0rem 5rem 0rem;
+    color: #fafafa;
+    z-index: 1;
+}
+#trabajos article h2{
+    font-size: 4rem;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+#trabajos article h3{
+    margin: 2rem 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 1px transparent;
+    -webkit-text-fill-color: #fafafa;
+}
+
+
+#trabajos article h3:hover{
+    transition: all .3s ease-in-out;
+    -webkit-text-stroke: 1px #fafafa;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.icon-list {
+    display: flex;
+    list-style: none;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-item {
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.icon-item.active img {
+    transform: scale(1.5);
+    border: .25rem solid snow;
+    border-radius: 50%;
+}
+.icon-item img {
+    height: 4rem;
+    margin: 1rem;
+}
+
+#porfolio{
+    display: flex;
+    justify-content: space-between;
+    height: 45vh;
+    padding: 1rem;
+}
+
+/* Animal */
+
+
+#animal{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-self: center;
+    position: relative;
+    z-index: 2001;
+    cursor: ew-resize;
+    pointer-events: all;
+}
+
+#loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(.75);
+    background-color: #fafafa;
+    border-radius: 50%;
+}
+
+#loader img {
+    max-width: 100%;
+}
+
+
+
+    #animal:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #3399cc;
+        transform: scale(1.25);
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    #animal:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #70b7da;
+
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+    }
+
+
+@-webkit-keyframes spin {
+    0%   { 
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   { 
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#renders{display: none;}

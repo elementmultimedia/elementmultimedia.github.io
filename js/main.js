@@ -81,3 +81,68 @@ btnMute.onclick = (e) => {
 btnUp.onclick = (e) => {
   video.volume += .25
 }
+
+
+/* Portfolio */
+
+/* Iconos */
+
+let icons = Array.from(document.querySelectorAll("#trabajos ul li[data-element]"))
+
+icons.forEach(icon =>
+  icon.onclick = (e) => {
+    e.preventDefault();
+    document.getElementById("trabajos").classList.remove("water");
+    document.getElementById("trabajos").classList.remove("fire");
+    document.getElementById("trabajos").classList.remove("earth");
+    document.getElementById("trabajos").classList.remove("air");
+    icons.forEach(icon => icon.classList.remove("active"));
+
+    if(e.target.dataset.element === undefined){
+      let element = e.target.parentElement.dataset.element;
+      document.getElementById("trabajos").classList.add(element);
+      e.target.parentElement.classList.add("active");
+
+      if(element === "water"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Producción Audiovisual"
+      }
+      if(element === "fire"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Diseño Grafico"
+      }
+      if(element === "earth"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Modelado 3D"
+      }
+      if(element === "air"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Programación Web y VIdeojuegos"
+      }
+
+    }else{
+      let element = e.target.dataset.element;
+      document.getElementById("trabajos").classList.add(element);
+      e.target.classList.add("active");
+      if(element === "water"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Producción Audiovisual"
+      }
+      if(element === "fire"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Diseño Grafico"
+      }
+      if(element === "earth"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Modelado 3D"
+      }
+      if(element === "air"){
+        document.getElementById("trabajos").querySelector("h3").innerHTML = "Programación Web y VIdeojuegos"
+      }
+
+    }
+
+
+  }
+)
+
+
+/* Characters */
+
+
+
+
+/*  360 */
